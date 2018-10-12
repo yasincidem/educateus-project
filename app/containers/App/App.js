@@ -13,6 +13,7 @@ import { Switch, Route, Link } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
+import YoutubePage from 'containers/YoutubePage/Loadable';
 import Footer from 'components/Footer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -47,9 +48,11 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="/features" component={FeaturePage} />
+      <Route path="/youtube" component={YoutubePage} />
       <Route path="/hello1" render={() => <p className="display-3">Hello1</p>} />
       <Route path="/hello2" render={() => <p className="display-3">Hello2</p>} />
       <Route path="/hello3" render={() => <p className="display-3">Hello3</p>} />
+
       <Route path="" component={NotFoundPage} />
     </Switch>
     <Footer />

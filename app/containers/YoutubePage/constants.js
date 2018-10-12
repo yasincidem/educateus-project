@@ -1,0 +1,3 @@
+export const LOAD_DATA_FROM_YOUTUBE = 'boilerplate/App/LOAD_DATA_FROM_YOUTUBE';
+export const LOAD_YOUTUBE_DATA_SUCCESS = 'boilerplate/App/LOAD_YOUTUBE_DATA_SUCCESS';
+export const LOAD_YOUTUBE_DATA_ERROR = 'boilerplate/App/LOAD_YOUTUBE_DATA_ERROR';
