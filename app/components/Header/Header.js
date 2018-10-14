@@ -1,28 +1,29 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import './style.scss';
-
-
-const styles = {
-  root: {
-    flexGrow: 1,
-  },
-  grow: {
-    flexGrow: 1,
-    flex: 1
-  }
-};
-
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  componentDidMount() {
+    console.log(this.props);
+  }
   render() {
     const classes = this.props;
     return (
       <div className={classes.root}>
-        <p>Yasin</p>
+        <AppBar position="fixed">
+          <Toolbar>
+            <Typography variant="h5" type="title" color="inherit">
+              EducateUS
+            </Typography>
+            <div>
+            </div>
+          </Toolbar>
+        </AppBar>
+
       </div>
     );
   }
 }
 
-export default withStyles(styles)(Header);
+export default Header;

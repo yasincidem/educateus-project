@@ -4,39 +4,38 @@ import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
+import LoadingIndicator from 'components/LoadingIndicator';
 
-class YoutubePage extends Component {
+
+class FirebasePage extends Component {
   componentDidMount() {
-    console.log(this.props);
+    this.props.getDataButtonClick();
   }
   render() {
     const tags = this.props.data ? this.props.data.map((item) => (
-      <ListItem key={item.id} button>
-        <ListItemText primary={item.name} />
+      <ListItem button>
+        <ListItemText primary={item.quote} secondary={item.person} />
       </ListItem>
     )) : (
-      <ListItem key="errorItem" button>
+      <ListItem key="errorItem" button disabled>
         <ListItemText primary={'An error occured'} />
       </ListItem>
     );
 
     return (
       <div>
-        <p>YoutubePage</p>
-        <Button variant="outlined" color="primary" onClick={this.props.getDataButtonClick}>
-          Get Data
-        </Button>
         <List component="nav">
-          {tags}
+          {this.props.loading ? <LoadingIndicator /> : (tags)}
         </List>
       </div>
     );
   }
 }
 
-YoutubePage.propTypes = {
+FirebasePage.propTypes = {
   getDataButtonClick: PropTypes.func,
-  data: PropTypes.any
+  data: PropTypes.any,
+  loading: PropTypes.bool
 };
 
-export default YoutubePage;
+export default FirebasePage;
