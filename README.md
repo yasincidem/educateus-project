@@ -1,4 +1,6 @@
 
+![](https://travis-ci.org/yasincidem/educateus-project.svg?branch=master)
+
 https://intense-atoll-80370.herokuapp.com/firebase
 
 ## Technologies
