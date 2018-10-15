@@ -16,6 +16,8 @@ https://intense-atoll-80370.herokuapp.com/firebase
 
 * Database -> Firebase
 
+* CI -> Travis CI
+
 * Project Management -> Trello
 https://trello.com/b/7NgC0zRA/educateus
 
