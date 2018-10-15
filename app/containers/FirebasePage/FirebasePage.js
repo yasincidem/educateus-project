@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
 import PropTypes from 'prop-types';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
@@ -12,8 +11,8 @@ class FirebasePage extends Component {
     this.props.getDataButtonClick();
   }
   render() {
-    const tags = this.props.data ? this.props.data.map((item) => (
-      <ListItem button>
+    const tags = this.props.data ? this.props.data.map((item, idx) => (
+      <ListItem button key={`quote${idx}`}>
         <ListItemText primary={item.quote} secondary={item.person} />
       </ListItem>
     )) : (

@@ -5,7 +5,6 @@ import Typography from '@material-ui/core/Typography';
 
 class Header extends React.Component { // eslint-disable-line react/prefer-stateless-function
   componentDidMount() {
-    console.log(this.props);
   }
   render() {
     const classes = this.props;
