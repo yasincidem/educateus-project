@@ -5,6 +5,12 @@ import {
   LOAD_FIREBASE_DATA_ERROR
 } from './constants';
 
+export function firebaseDataPending() {
+  return {
+    type: LOAD_FIREBASE_DATA_PENDING
+  };
+}
+
 export function loadFirebaseData() {
   return {
     type: LOAD_DATA_FROM_FIREBASE,
@@ -15,12 +21,6 @@ export function firebaseDataLoaded(data) {
   return {
     type: LOAD_FIREBASE_DATA_SUCCESS,
     data
-  };
-}
-
-export function firebaseDataPending() {
-  return {
-    type: LOAD_FIREBASE_DATA_PENDING
   };
 }
 

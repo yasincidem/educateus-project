@@ -11,10 +11,10 @@ import {
 import { loadFirebaseData } from './actions';
 import reducer from './reducer';
 import saga from './saga';
-import YoutubePage from './FirebasePage';
+import FirebasePage from './FirebasePage';
 
 const mapDispatchToProps = (dispatch) => ({
-  getDataButtonClick: () => {
+  getData: () => {
     dispatch(loadFirebaseData());
   }
 });
@@ -26,9 +26,8 @@ const mapStateToProps = createStructuredSelector({
 });
 
 const withConnect = connect(mapStateToProps, mapDispatchToProps);
+const withReducer = injectReducer({ key: 'firebase', reducer });
+const withSaga = injectSaga({ key: 'firebase', saga });
 
-const withReducer = injectReducer({ key: 'youtube', reducer });
-const withSaga = injectSaga({ key: 'youtube', saga });
-
-export default compose(withReducer, withSaga, withConnect)(YoutubePage);
+export default compose(withReducer, withSaga, withConnect)(FirebasePage);
 export { mapDispatchToProps };

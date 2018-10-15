@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-const selectFirebase = (state) => state.get('youtube');
+const selectFirebase = (state) => state.get('firebase');
 
 const makeSelectFirebaseData = () => createSelector(
   selectFirebase,

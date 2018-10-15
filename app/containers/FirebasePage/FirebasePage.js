@@ -8,7 +8,7 @@ import LoadingIndicator from 'components/LoadingIndicator';
 
 class FirebasePage extends Component {
   componentDidMount() {
-    this.props.getDataButtonClick();
+    this.props.getData();
   }
   render() {
     const tags = this.props.data ? this.props.data.map((item, idx) => (
@@ -32,7 +32,7 @@ class FirebasePage extends Component {
 }
 
 FirebasePage.propTypes = {
-  getDataButtonClick: PropTypes.func,
+  getData: PropTypes.func,
   data: PropTypes.any,
   loading: PropTypes.bool
 };
