@@ -14,7 +14,7 @@ notifications:
   email:
     on_failure: change
 
-after_script: # Upload coverage reports 
+after_success: # Upload coverage reports 
   - COVERALLS_REPO_TOKEN=$repo_token npm run coveralls
 
 cache:
