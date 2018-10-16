@@ -15,7 +15,7 @@ notifications:
     on_failure: change
 
 after_script: # Upload coverage reports 
-  - COVERALLS_REPO_TOKEN=$repo_token npm run coveralls
+  - REPO_TOKEN=$repo_token npm run coveralls
 
 cache:
   yarn: true
