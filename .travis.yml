@@ -7,12 +7,15 @@ node_js:
   - 6
   
 script:
-  - npm run test
+  - npm run test --coverage
   - npm run build
 
 notifications:
   email:
     on_failure: change
+
+after_script: # Upload coverage reports 
+  - COVERALLS_REPO_TOKEN=$repo_token npm run coveralls
 
 cache:
   yarn: true
