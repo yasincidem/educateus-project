@@ -43,4 +43,3 @@ https://educateus.gitbook.io/project/
 * Homework
 * Watch Together
 
-Yasin Çidem
