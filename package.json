@@ -27,7 +27,7 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coverage": "npm run test --env=jsdom --coverage",
-    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+    "coveralls": "jest --coverage --coverageReporters=json,lcov,text | coveralls"
   },
   "dependencies": {
     "@material-ui/core": "^3.2.0",
