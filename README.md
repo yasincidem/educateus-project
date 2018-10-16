@@ -1,7 +1,7 @@
 
-![](https://travis-ci.org/yasincidem/educateus-project.svg?branch=master)
+![](https://travis-ci.org/yasincidem/educateus-project.svg?branch=master) ![](https://david-dm.org/yasincidem/educateus-project.svg) ![](https://heroku-badge.herokuapp.com/?app=educateus-prod)
 
-https://intense-atoll-80370.herokuapp.com/firebase
+Production -> https://educateus-prod.herokuapp.com/
 
 ## Technologies
 * Framework -> React
