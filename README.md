@@ -43,3 +43,84 @@ https://educateus.gitbook.io/project/
 * Homework
 * Watch Together
 
+
+## Routes
+ * /dashboard
+ * /profile
+ * /paths
+ * /path/algorithm
+ * /recommended
+ * /login
+ * /signup
+ * /reset
+ * /category/biology
+ * /biology/playlist/playlistId/videoId
+ * /biology/playlist/playlistId/videoId/togetherId
+
+## Categories
+
+ * Biology
+ * Chemistry
+ * Geology
+ * Mathematics
+ * Medicine
+ * Physics
+ * Technology
+ * Zoology
+ 
+ 
+ * Economics
+ * Geography
+ * History
+ * Journalism
+ * Linguistics
+ * Philosophy
+ * Politics
+ * Psychology
+ * Sociology
+ * World
+ 
+ 
+ * Creativity
+ * Education
+ * Human
+ * Leadership
+ * Motivation
+ * Productivity
+ * Relationship
+ * Self-Improvement
+ 
+ 
+ * Culture
+ * Design
+ * Literature
+ * Photography
+ * Artists
+ 
+ 
+ ## APIs
+ * https://api.uclassify.com/v1/uclassify/topics/classify?readkey=YOUR_READ_API_KEY_HERE&text=
+ ```
+ {
+"Arts": 0.266648,
+"Business": 0.0464789,
+"Computers": 0.203898,
+"Games": 0.0983561,
+"Health": 0.08687,
+"Home": 0.0986701,
+"Recreation": 0.105086,
+"Science": 0.0490358,
+"Society": 0.0306638,
+"Sports": 0.0142938
+}
+ ```
+ 
+ * https://www.youtube.com/api/timedtext?lang=en&v=TRhStl7SQnM
+ 
+ * https://www.googleapis.com/youtube/v3/captions?part=snippet&videoId=P3GagfbA2vo&key=API_KEY
+ 
+ * https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=UULXo7UDZvByw2ixzpQCufnA&key=AIzaSyAZGJ9zSpQuNzen5QYfuOS4mxOyrwT9hAM
+ 
+
+ 
+ 
