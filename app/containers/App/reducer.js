@@ -1,23 +1,26 @@
-/*
- * AppReducer
- *
- * The reducer takes care of our data. Using actions, we can change our
- * application state.
- * To add a new action, add it to the switch statement in the reducer function
- *
- * Example:
- * case YOUR_ACTION_CONSTANT:
- *   return state.set('yourStateVariable', true);
- */
-
 import { fromJS } from 'immutable';
+import {
+  OPEN_LEFT_DRAWER,
+  CLOSE_LEFT_DRAWER,
+  CHANGE_ONHOVER_CATEGORY
+} from './constants';
 
 
 // The initial state of the App
-const initialState = fromJS({});
+const initialState = fromJS({
+  leftDrawer: false,
+  rightDrawer: false,
+  onHoverCategory: null
+});
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
+    case OPEN_LEFT_DRAWER:
+      return state.set('leftDrawer', true);
+    case CLOSE_LEFT_DRAWER:
+      return state.set('leftDrawer', false);
+    case CHANGE_ONHOVER_CATEGORY:
+      return state.set('onHoverCategory', action.category);
     default:
       return state;
   }

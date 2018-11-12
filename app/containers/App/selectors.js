@@ -4,28 +4,20 @@
 
 import { createSelector } from 'reselect';
 
+const selectApp = (state) => state.get('app');
+
 const selectGlobal = (state) => state.get('global');
 
 const selectRoute = (state) => state.get('route');
 
-const makeSelectCurrentUser = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('currentUser')
+const makeSelectLeftDrawer = () => createSelector(
+  selectApp,
+  (state) => state.get('leftDrawer')
 );
 
-const makeSelectLoading = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('loading')
-);
-
-const makeSelectError = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.get('error')
-);
-
-const makeSelectRepos = () => createSelector(
-  selectGlobal,
-  (globalState) => globalState.getIn(['userData', 'repositories'])
+const makeSelectOnhoverCategory = () => createSelector(
+  selectApp,
+  (state) => state.get('onHoverCategory')
 );
 
 const makeSelectLocation = () => createSelector(
@@ -35,9 +27,7 @@ const makeSelectLocation = () => createSelector(
 
 export {
   selectGlobal,
-  makeSelectCurrentUser,
-  makeSelectLoading,
-  makeSelectError,
-  makeSelectRepos,
   makeSelectLocation,
+  makeSelectLeftDrawer,
+  makeSelectOnhoverCategory
 };

@@ -10,6 +10,15 @@ class FirebasePage extends Component {
   componentDidMount() {
     this.props.getData();
   }
+
+  static getDerivedStateFromProps() {
+    return null;
+  }
+
+  componentDidUpdate() {
+    this.props.getData();
+  }
+
   render() {
     const tags = this.props.data ? this.props.data.map((item, idx) => (
       <ListItem button key={`quote${idx}`}>
@@ -20,7 +29,6 @@ class FirebasePage extends Component {
         <ListItemText primary={'An error occured'} />
       </ListItem>
     );
-
     return (
       <div>
         <List component="nav">

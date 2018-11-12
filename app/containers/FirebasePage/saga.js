@@ -12,7 +12,6 @@ function createEventChannel() {
           'value',
           (data) => {
             emit(data.val());
-            console.log(data.val());
           });
       return () => fire.database().ref('Data').off(listener);
     }
