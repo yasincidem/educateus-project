@@ -1,7 +1,58 @@
 
 ![](https://travis-ci.org/yasincidem/educateus-project.svg?branch=master) ![](https://david-dm.org/yasincidem/educateus-project.svg) ![](https://heroku-badge.herokuapp.com/?app=educateus-prod) [![Coverage Status](https://coveralls.io/repos/github/yasincidem/educateus-project/badge.svg?branch=master)](https://coveralls.io/github/yasincidem/educateus-project?branch=master)
 
-Production -> https://educateus-prod.herokuapp.com/
+Production -> https://vast-falls-80141.herokuapp.com/
+
+
+# Functional Requirements
+
+### Video Explorer
+- User can find quality and carefully selected videos that are taken from YouTube.  
+-  Admin shall add videos by looking at their content and some other features that affect its quality
+### Categories
+- User can see all the catogories and subcategories to find a video related to his/her interest easily
+### Watch Video
+- After a user clicks a video, the user should view the video with a nice and simple user interface
+### Discover
+- User can see all the topics that he/she may want to learn about deeply
+### NewsFeeds
+- User shall check news that is related to the topic he wants to know more and see tweets , most popular videos that is added by the system (admin) .
+### Daily Videos
+- View the most popular videos about a particular category
+### Register
+- Users shall fill and confirm registration form to use all possible features of website 
+### Profile
+- All user can see basic information about their activity on the website after logging in.
+### Remember
+- In case a user that is registered already and added a note while watching a video , the system will remind him to check what note he added and which video he was interested in before.
+### Note
+- User can take notes, that he may want to remember later, while watching a video 
+### Homework
+- A user (Teacher) shall be able to create playlist that appel to the taste buds of him .
+- Admin shall add videos into database by categorizing them after selecting carefully.
+- A user ( teacher) shall be able to give homework to students by choosing proper videos that class is about to study.
+*Watch Together
+- In case two or more users want to watch a video together to have interaction  , the system gives an opportunity by giving them a link that could enable watching together feature if users registered and clicked watch together button.
+
+
+# Non-Functional Requirements
+### Usability
+  - People with a little understanding of using complicated website, must be able to use the website
+ ### Security
+ - The system should be safeguarded against deliberate and intrusive faults from internal and external 
+        sources
+ ### Performance
+ - The front-page load time must be no more that 2 seconds for users that access the website using an LTE 
+         mobile connection
+ ### Scalability
+ - The website attendancy limit must be scalable enough to support 1,000 users at a time
+ ### Reusability
+ - The website should be coded as it could implement to other platforms like mobile, desktop
+ ### Accessibility
+  - All accessibility tags, properties should be added
+    
+
+
 
 ## Technologies
 * Framework -> React
