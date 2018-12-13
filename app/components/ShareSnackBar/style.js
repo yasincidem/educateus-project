@@ -4,4 +4,3 @@ export default (theme) => ({
       height: theme.spacing.unit * 4,
     },
   });
-  
