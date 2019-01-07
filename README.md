@@ -72,10 +72,8 @@
 * CI -> Travis CI
 
 * Project Management -> Trello
-https://trello.com/b/7NgC0zRA/educateus
 
 * Documentation  -> Gitbook 
-https://educateus.gitbook.io/project/
 
 
 
