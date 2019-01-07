@@ -1,7 +1,9 @@
 
-![](https://travis-ci.org/yasincidem/educateus-project.svg?branch=master) ![](https://david-dm.org/yasincidem/educateus-project.svg) ![](https://heroku-badge.herokuapp.com/?app=educateus-prod) [![Coverage Status](https://coveralls.io/repos/github/yasincidem/educateus-project/badge.svg?branch=master)](https://coveralls.io/github/yasincidem/educateus-project?branch=master)
 
-Production -> https://vast-falls-80141.herokuapp.com/
+![](https://david-dm.org/yasincidem/educateus-project.svg)
+![](https://heroku-badge.herokuapp.com/?app=educateus-prod)
+
+
 
 
 # Functional Requirements
